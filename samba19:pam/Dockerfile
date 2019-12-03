@@ -5,7 +5,7 @@
 FROM fedora:27
 LABEL author="@perecanet"
 LABEL description="SAMBA server 2018-2019"
-RUN dnf -y install procps samba samba-client cifs-utils authconfig nss-pam-ldap vim openldap-clients
+RUN dnf -y install procps samba samba-client cifs-utils authconfig nss-pam-ldapd vim openldap-clients
 RUN mkdir /opt/docker
 COPY * /opt/docker/
 RUN chmod +x /opt/docker/install.sh /opt/docker/startup.sh

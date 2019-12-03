@@ -18,6 +18,6 @@ echo -e "pla\npla" | smbpasswd -a pla
 /sbin/nscd
 /sbin/nslcd
 /usr/sbin/smbd && echo "smb Ok"
-/usr/sbin/nmbd -F && echo "nmb  Ok"
+/usr/sbin/nmbd && echo "nmb  Ok"
 /bin/bash
 
